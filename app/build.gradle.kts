@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.timetracker"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.timetracker"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
@@ -36,6 +36,8 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation(libs.androidx.compose.foundation.layout)
+    implementation(libs.androidx.material3)
     debugImplementation("androidx.compose.ui:ui-tooling")
 
     // Room (Database)
